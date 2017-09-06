@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+  <meta charset="utf-8">
+  <title>Diseño y Desarrollo Web | Colorfish</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <meta property="og:title" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="">
+
+  <link rel="shortcut icon" href="img/colorfish_favicon.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/linecons.css" rel="stylesheet" type="text/css">
+  <link href="css/responsive.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/modernizr-2.7.1.js"></script>
+
+</head>
+
+<body>
+
+  <div id="app">
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="logo" href="index.html"><img src="img/logo.svg" alt="Logo"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav text-center">
+            <li><a href="#planes" class="scroll">Planes</a></li>
+            <li><a href="#">Sign in</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#planes" class="scroll">Entrar</a></li>
+            <li><a class="signup-cta-collapse" href="#">Ver Planes</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4">
+            <a href="index.html"><img src="img/logo.svg" alt="Logo"></a>
+          </div>
+          <div class="col-xs-5 text-center navbar-nav">
+            <a href="#planes" class="scroll">Planes</a>&nbsp; &nbsp;<a href="#">Nosotros</a>
+          </div>
+          <div class="col-xs-3 signin text-right navbar-nav">
+            <a href="#planes" class="scroll">Entrar</a><a class="btn signup-cta-static" href="#">Ver Planes</a>
+          </div>
+        </div>
+
+        <div class="row header-info">
+          <div class="col-sm-5 col-md-push-1 text-center">
+            <h1 class="clrfsh_blue wow fadeIn">Páginas Web</h1>
+            <br />
+            <p class="lead wow fadeIn clrfsh_blue" data-wow-delay="0.5s">
+              <!-- <span class="lead-contrast">Haz que tu negocio crezca.</span> <br> -->
+            Haz que tu negocio crezca en la era digital.<br>
+            Hacemos diseño gráfico, SEO, Google Analytics
+            </p>
+
+            <br />
+
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                <div class="row">
+                  <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="1s">
+                    <a href="#planes" class="btn btn-secondary btn-lg scroll">Explorar</a>
+                  </div>
+                  <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
+                    <a href="#planes" class="btn btn-primary btn-lg scroll"><span>Planes</span></a>
+                  </div>
+                </div><!--End Button Row-->
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </header>
+
+    <div class="mouse-icon hidden-xs">
+				<div class="scroll"></div>
+			</div>
+
+
+    <div class="container margin-top-60">
+      <div class="row">
+        <div class="subtitle1 col-sm-12">
+          <h3>Pleo is a simple spending solution for your company<br></h3>
+        </div>
+      </div>
+
+      <div class="row firstfeatures3">
+        <template v-for="feature in features">
+
+          <feature :feature="feature"></feature>
+
+        </template>
+      </div>
+
+    </div>
+
+
+    <div class="mainfeatures">
+
+	<div id="startup-section" class="main-feature">
+		<div class="container reorder">
+			<div class="row">
+			<div class="col-lg-6 col-lg-offset-0 col-md-6 col-sm-10 col-sm-offset-1 col-md-offset-0 col-xs-10 col-xs-offset-1 featureimage item1">
+						<img src="img/feat-1.png" class="2x " width="100%" height="auto">
+	    </div>
+			<div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-1  col-xs-10 col-xs-offset-1 item2">
+				<h3>Plan Básico</h3>
+				<h2>Empower your team, <br>while staying in control<br></h2>
+				<ul class="top-three-features">
+					<li><p class="one-of-the-features">Enable every employee with a company card</p></li>
+					<li><p class="one-of-the-features">Set individual spending limits for each user</p></li>
+					<li><p class="one-of-the-features">Disable or enable Pleo cards instantly</p></li>
+				</ul>
+        <div class="pad-sm">
+          <a class="btn-aside" href="#">ver ejemplos</a>
+          <a class="btn-feature scroll" href="#planes">Ver precio</a>
+        </div>
+			</div>
+		</div>
+	 </div>
+	</div>
+
+	<div id="pyme-section" class="main-feature main-feature-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-0 col-xs-10 col-xs-offset-1">
+				 	   <h3>Plan PyME</h3>
+						 <h2>No more lost receipts <br>and tedious paperwork<br></h2>
+						 <ul class="top-three-features">
+							 <li><p class="one-of-the-features">Real-time notifications when a Pleo card is used</p></li>
+							 <li><p class="one-of-the-features">Easily capture and match receipts with the Pleo app</p></li>
+							 <li><p class="one-of-the-features">Automatic categorization of all purchases</p></li>
+						 </ul>
+             <div class="pad-sm">
+               <a class="btn-aside" href="#">ver ejemplos</a>
+               <a class="btn-feature scroll" href="#planes">Ver precio</a>
+             </div>
+				</div>
+				<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 featureimage2">
+				 <img src="img/feat-1.png" class="2x " width="100%" height="auto">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="profesional-section" class="main-feature main-feature-3">
+		<div class="container reorder">
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10  col-xs-offset-1 featureimage3 item1">
+						<img src="img/feat-1.png" class="2x " width="100%" height="auto">
+				</div>
+				<div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-xs-10  col-xs-offset-1 item2">
+					<h3>Plan Profesional</h3>
+					<h2>See where the company<br> money is going in real time<br></h2>
+					<ul class="top-three-features">
+						<li><p class="one-of-the-features">Follow all purchases, categorized with the right receipts</p></li>
+						<li><p class="one-of-the-features">Set custom tags to match the accounting procedures</p></li>
+						<li><p class="one-of-the-features">Integrate and sync Pleo with your accounting system</p></li>
+					</ul>
+          <div class="pad-sm">
+            <a class="btn-aside" href="#">ver ejemplos</a>
+            <a class="btn-feature scroll" href="#planes">Ver precio</a>
+          </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="integrations main-feature-3">
+	  <div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-xs-12 integrations-desc">
+					<h2>Accounting systems integrations</h2>
+					<h3>Easily connect Pleo with your accounting system</h3>
+					<p>Pleo works seamlessly with various accounting systems and saves you precious time on repetitive tasks. You can now import all expenses and associated data with a single click.</p>
+				</div>
+			  <div class="col-lg-3 col-md-3 col-xs-3 item2">
+					<a href="http://help.pleo.io/integrations/how-to-set-up-xero-integration" target="_blank"><img class="integration-one" src="/095539d7d25a835b15b6aaa07e414816.png" height="55"></a>
+				</div>
+			  <div class="col-lg-3 col-md-3 col-xs-3 item2">
+					<img class="integration-one" src="/735c29971e0967aa2779b6e43da00f52.png" height="40">
+				</div>
+			  <div class="col-lg-3 col-md-3 col-xs-3 item2">
+					<img class="integration-one" src="/90f6c8d75bcc08450b3d0489b8d8673d.png" height="40">
+				</div>
+			  <div class="col-lg-3 col-md-3 col-xs-3 item2">
+					<img class="integration-two" src="/44415cd830928acbb8077e770110279f.png" height="40">
+				</div>
+			</div>
+	  </div>
+	</div>
+
+
+</div>
+
+
+
+
+    <!--Top_content-->
+    <!-- <section id="top_content" class="top_cont_outer">
+      <div class="top_cont_inner">
+        <div class="container">
+          <div class="top_content">
+            <div class="row">
+              <div class="col-lg-5 col-sm-7">
+                <div class="top_left_cont fadeInLeft wow animated">
+                  <h3>Colourful &amp; sexy!</h3>
+                  <h2>creating websites that
+                    make you stop &amp; stare</h2>
+                  <p> Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquam, risus at semper. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum. </p>
+                  <a href="#service" class="learn_more2">Learn more</a> </div>
+              </div>
+              <div class="col-lg-7 col-sm-5"> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!--Top_content-->
+
+
+    <svg style="display:block; fill:#E7EEF4;" xmlns="http://www.w3.org/2000/svg" width="100%" height="113.39" viewBox="0 0 1291 113.39" preserveAspectRatio="none">
+      <path class="cls-2" d="M0,25.39s213.5,91.5,529.08,15.16C953.25-62,1291,62.39,1291,62.39v51H0Z"/>
+    </svg>
+
+    <section id="features_section">
+
+      <div class="text-center gradient-bg">
+          <div class="col-sm-8 col-sm-offset-2 text-center">
+            <h2 class="clrfsh_blue">¿Cómo funciona?</h2>
+            <p class="clrfsh_blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut.</p>
+          </div>
+      </div>
+
+      <div class="container">
+
+      <div class="row margin-40">
+        <div class="col-md-6 vcenter">
+          <img class="img-responsive" src="img/feat-1.png" alt="">
+        </div>
+        <div class="col-md-4 col-md-push-1 text-left vcenter">
+          <h2>Diseño gráfico en tu proyecto</h2>
+          <p>Implementamos un diseño gráfico agradable en todos nuestros proyectos.</p>
+          <a href="#planes" class="btn btn-feat btn-lg scroll"><span>Planes</span></a>
+        </div>
+      </div>
+      <hr class="one">
+      <div class="row margin-40">
+        <div class="col-md-4 col-md-push-1 text-left vcenter">
+          <h2>Google analytics</h2>
+          <p>Analiza todo tu tráfico y aprovecha los datos para la toma de decisiones en tu negocio.</p>
+          <a href="#planes" class="btn btn-feat btn-lg scroll"><span>Planes</span></a>
+        </div>
+        <div class="col-md-6 col-md-push-1 text-right vcenter">
+          <img class="img-responsive" src="img/feat-2.png" alt="">
+        </div>
+      </div>
+      <hr class="two">
+      <div class="row margin-40">
+        <div class="col-md-6 vcenter">
+          <img class="img-responsive" src="img/feat-3.png" alt="">
+        </div>
+        <div class="col-md-4 col-md-push-1 text-left vcenter">
+          <h2>Search Engine Optimization</h2>
+          <p>Posiciónate en los primeros lugares en google y otros buscadores con el plan profesional.</p>
+          <a href="#planes" class="btn btn-feat btn-lg scroll"><span>Planes</span></a>
+        </div>
+      </div>
+      <hr class="one">
+      <div class="row margin-40">
+        <div class="col-md-4 col-md-push-1 text-left vcenter">
+          <h2>Google analytics</h2>
+          <p>Analiza todo tu tráfico y aprovecha los datos para la toma de decisiones en tu negocio.</p>
+          <a href="#planes" class="btn btn-feat btn-lg scroll"><span>Planes</span></a>
+        </div>
+        <div class="col-md-6 col-md-push-1 text-right vcenter">
+          <img class="img-responsive" src="img/feat-2.png" alt="">
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+    <!--Pricing-->
+    <svg style="display:block; fill:#292c3f;" xmlns="http://www.w3.org/2000/svg" width="100%" height="92" viewBox="0 0 1918 92" preserveAspectRatio="none">
+      <path d="M1918,84S1509.84,0,959,0,0,84,0,84v8H1918Z"/>
+    </svg>
+
+    <section id="planes">
+      <div class="container">
+        <div class="row margin-40">
+          <div class="col-sm-8 col-sm-offset-2 text-center">
+            <h2 class="white">Planes</h2>
+            <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut.</p>
+          </div>
+        </div>
+
+        <div class="row margin-50">
+
+          <div class="col-sm-4 pricing-container wow fadeInUp" data-wow-delay="0.5s">
+            <br />
+            <br />
+            <ul class="list-unstyled pricing-table text-center" id="startup-bg">
+              <div>
+      					<div class="headline"><h5>Básico</h5></div>
+      					<div class="price"><div class="amount">$3,990<small>MXN</small></div></div>
+              </div>
+    					<li class="info">Comienza a darle presencia online a tu negocio con una landing page</li>
+    					<li class="features first">Dominio GRATIS por 1 año</li>
+    					<li class="features">2 correos electrónicos</li>
+    					<li class="features">Enlace a redes sociales</li>
+              <li class="features">Host GRATIS por un año</li>
+              <li class="features">Visible en todos los dispositivos</li>
+              <li class="features">Hasta 6 secciones</li>
+              <li class="features last"><button type="button" name="startup" class="contratar-btn" id="startup-btn" data-toggle="modal" data-target="#startupModal">contratar</button></li>
+    				</ul>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="startupModal" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Plan STARTUP</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Some text in the modal.</p>
+
+                  <form class="" action="index.html" method="post">
+
+                    <div class="form-group row">
+                      <div class="col-md-6 col-sm-12">
+                        <label for="inputName">Nombre</label>
+                        <input type="name" class="form-control" id="inputName" required placeholder="Nombre">
+                      </div>
+                      <div class="col-md-6 col-sm-12">
+                        <label for="inputEmail">Apellidos</label>
+                        <input type="name" class="form-control" id="inputLastName" required placeholder="Apellidos">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-md-6 col-sm-12">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" required placeholder="Email">
+                      </div>
+                      <div class="col-md-6 col-sm-12">
+                        <label for="inputPhone">Telefono</label>
+                        <input type="tel" class="form-control" id="inputPhone" required placeholder="Telefono">
+                      </div>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox">Si quiero recibir promociones</label>
+                    </div>
+                    <div class="text-right">
+                      <button type="button" name="startup" class="modal-btn-cerrar" id="startup-modal-btn" data-toggle="modal" data-target="#startupModal">cerrar</button>
+                      <button href="#startupPromo" type="submit" class="modal-btn-contratar" data-toggle="collapse">Contratar</button>
+                    </div>
+
+                  </form>
+
+                </div>
+                <div id="startupPromo" class="modal-footer collapse">
+                  <div class="col-md-8 col-sm-12">
+                    Tambien podemos hacer tu logo.
+                  </div>
+                  <div class="col-md-4 col-sm-12 text-center">
+                    <a href="#" class="btn btn-secondary-inver-white">No, gracias</a>
+                    <a href="#" class="btn btn-secondary-white">Ver mas</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <div class="col-sm-4 pricing-container wow fadeInUp" data-wow-delay="0.2s">
+            <ul class="list-unstyled pricing-table active text-center" id="profesional-bg">
+              <div>
+                <div class="headline"><h5 class="white">Profesional</h5></div>
+      					<div class="price"><div class="amount">$9,900<small>MXN</small></div></div>
+              </div>
+    					<li class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut.</li>
+    					<li class="features first">Dominio <span class="pro-word">GRATIS</span> por <span class="pro-word">2</span> años</li>
+    					<li class="features"><span class="pro-word">5</span> correos electrónicos</li>
+    					<li class="features">Enlace a redes sociales</li>
+    					<li class="features pro-feature">Google Analytics</li>
+              <li class="features">Host <span class="pro-word">GRATIS</span> por <span class="pro-word">2</span> años</li>
+              <li class="features pro-feature">Visible en todos los dispositivos</li>
+              <li class="features">Hasta <span class="pro-word">6</span> secciones</li>
+              <li class="features">Mantenimiento por <span class="pro-word">2</span> años</li>
+              <li class="features last"><button type="button" name="profesional" class="contratar-btn" id="profesional-btn">contratar</button></li>
+    				</ul>
+          </div>
+
+          <div class="col-sm-4 pricing-container wow fadeInUp" data-wow-delay="0.5s">
+            <br />
+            <br />
+            <ul class="list-unstyled pricing-table text-center" id="pyme-bg">
+              <div>
+                <div class="headline"><h5 class="white">PyME</h5></div>
+      					<div class="price"><div class="amount">$7,900<small>MXN</small></div></div>
+              </div>
+    					<li class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut.</li>
+    					<li class="features first">Dominio GRATIS por 1 año</li>
+    					<li class="features">3 correos electrónicos</li>
+    					<li class="features">Enlace a redes sociales</li>
+              <li class="features">Host GRATIS por un año</li>
+              <li class="features">Visible en todos los dispositivos</li>
+              <li class="features">Hasta 6 secciones</li>
+              <li class="features last"><button type="button" name="profesional" class="contratar-btn" id="pyme-btn">contratar</button></li>
+    				</ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- #Pricing -->
+
+    <!-- Action -->
+    <section id="action" class="responsive">
+        <div class="vertical-center">
+             <div class="container">
+                <div class="row">
+                    <div class="action take-tour">
+                        <div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <h1 class="title">Tu proyecto es distinto?</h1>
+                            <p>Si tienes un proyecto distinto, solo contáctanos.</p>
+                        </div>
+                        <div class="col-sm-5 text-center wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <div class="tour-button">
+                                <a href="#" class="btn btn-common">Contactanos</a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <!--/#action-->
+
+
+    <section id="other_services">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text-center">
+            <h2>Podemos hacer más por ti!</h2>
+            <p>Contamos con mas servicios para tu empresa</p>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-xs-12 col-sm-4">
+            <div class="service_card">
+              <i>
+                <img src="img/img1.png" alt="Diseño y Desarrollo web" height="150">
+              </i>
+              <h3>Marketing Digital</h3>
+              <p>Hacemos que tu negocio tenga una presencia en internet, con una página web.</p>
+              <a href="#" class="btn btn-secondary">VER MAS</a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-4">
+            <div class="service_card">
+              <i>
+                <img src="img/img1.png" alt="Diseño y Desarrollo web" height="150">
+              </i>
+              <h3>Branding</h3>
+              <p>Hacemos que tu negocio tenga una presencia en internet, con una página web.</p>
+              <a href="#" class="btn btn-secondary">VER MAS</a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-4">
+            <div class="service_card">
+              <i>
+                <img src="img/img1.png" alt="Diseño y Desarrollo web" height="150">
+              </i>
+              <h3>Social Media</h3>
+              <p>Hacemos que tu negocio tenga una presencia en internet, con una página web.</p>
+              <a href="#" class="btn btn-secondary">VER MAS</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="invite" class="pad-lg light-gray-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text-center">
+            <i class="fa fa-envelope-o margin-40"></i>
+            <h2 class="black">Get the invite</h2>
+            <br />
+            <p class="black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut.</p>
+            <br />
+
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <form role="form">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-lg">Request Invite</button>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="press" class="pad-sm">
+      <div class="container">
+
+        <div class="row margin-30 news-container">
+          <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 wow fadeInLeft" data-wow-delay="0.8s">
+            <a href="#" target="_blank">
+            <img class="news-img pull-left" src="img/press-01.jpg" alt="Tech Crunch">
+            <p class="black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut.<br />
+            <small><em>Tech Crunch - January 15, 2015</em></small></p>
+            </a>
+          </div>
+        </div>
+
+        <div class="row margin-30 news-container">
+          <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 wow fadeInLeft" data-wow-delay="1.2s">
+            <a href="#" target="_blank">
+            <img class="news-img pull-left" src="img/press-02.jpg" alt="Forbes">
+            <p class="black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut. <br />
+            <small><em>Forbes - Feb 25, 2015</em></small></p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <svg style="display:block; fill:#292c3f;" xmlns="http://www.w3.org/2000/svg" width="100%" height="113.39" viewBox="0 0 1291 113.39"  preserveAspectRatio="none">
+      <path class="cls-1" d="M0,25.39s213.5,91.5,529.08,15.16C953.25-62,1291,62.39,1291,62.39v51H0Z"/>
+    </svg>
+
+    <footer class="pad-sm">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="img/footer_logo.png" alt="">
+            <p><small>&copy; 2017 Colorfish, SAS. Todos los derechos reservados.</small></p>
+          </div>
+
+          <div class="col-md-2">
+            <ul>
+              <li>Servicios</li>
+              <li><a href="#">Diseño Web</a></li>
+              <li><a href="#">Marketing Digital</a></li>
+              <li><a href="#">Diseño de identidad</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <ul>
+              <li>Servicios</li>
+              <li><a href="#">Diseño Web</a></li>
+              <li><a href="#">Marketing Digital</a></li>
+              <li><a href="#">Diseño de identidad</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <ul>
+              <li>Contacto</li>
+              <li><a href="#">info@colorfish.mx</a></li>
+              <li><a href="#">+8117157719</a></li>
+              <li>
+                <ul class="social">
+                  <li><a :href="url_facebook" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                  <li><a :href="url_twitter" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+                  <li><a :href="url_instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                  <li><a :href="url_dribbble" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row last">
+          <div class="col-md-12">
+            <ul>
+              <li><a href="#">Términos de Servicio</a></li>
+              <li><a href="#">Politica de privacidad</a></li>
+              <li><a href="#">Aviso de privacidad</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </div>
+
+    <script src="https://unpkg.com/vue"></script>
+
+    <!-- Chatlio
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript">
+      window._chatlio = window._chatlio||[];
+      !function(){ var t=document.getElementById("chatlio-widget-embed");if(t&&window.ChatlioReact&&_chatlio.init)return void _chatlio.init(t,ChatlioReact);for(var e=function(t){return function(){_chatlio.push([t].concat(arguments)) }},i=["configure","identify","track","show","hide","isShown","isOnline", "page"],a=0;a<i.length;a++)_chatlio[i[a]]||(_chatlio[i[a]]=e(i[a]));var n=document.createElement("script"),c=document.getElementsByTagName("script")[0];n.id="chatlio-widget-embed",n.src="https://w.chatlio.com/w.chatlio-widget.js",n.async=!0,n.setAttribute("data-embed-version","2.2");
+         n.setAttribute('data-widget-id','f4dc953a-6dba-4916-4bc8-d06c6b0cb4fa');
+         c.parentNode.insertBefore(n,c);
+      }();
+    </script>
+
+
+
+
+    <!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+    </body>
+</html>
